@@ -31,6 +31,13 @@ func main() {
 			zipCode: 28080,
 		},
 	}
+
+	canita.updateName("Carmen")
+	canita.print()
+}
+
+func (p *person) updateName(lastName string) {
+	p.lastName = lastName
 }
 
 func (p person) print() {
